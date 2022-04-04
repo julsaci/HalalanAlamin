@@ -29,6 +29,9 @@
       color: white;
     }
   
+
+
+
     .container {
           position: relative;
           text-align: center;
@@ -40,42 +43,90 @@
           left: 50%;
           transform: translate(-50%, -50%);
     }
-  
+
+
+
+    * {
+  box-sizing: border-box;
+}
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     </style>
     </head>
     <body>
+<!-- Nav Bar -->
     <div class="topnav">
-      <a href="#home">Home</a>
+      <a href="pt.html">Home</a>
       <a href="#About">About Us</a>
       <a class="active"  href="#Leni">Leni Robredo</a>
       <a href="#BBM">Ferdinand Marcos Jr.</a>
       <a href="#Isko">Isko Moreno</a>
     </div>
 
+
+
+
+
+<!-- header -->
 <div class="container">
       <img src="leni.jpg" alt="leni" style="width:100%; opacity:0.75" >
       <h2 class="centered">LENI ROBREDO</h2>
       <div>
-      <p>credentials
-            <ul>
-              <li>14th Vice President of the Philippines</li>
-              <li>Graduate of BS Economics from the University of the Philippines</li>
-            </ul>
-    achievements
-        <ul>
-          <li>Honorary Outstanding Woman Award of  the year 2016</li>
-        </ul>
-    platforms
-        <ul>
-          <li>Pandemic response</li>
-          <li>Human rights</li>
-          <li>Education and youth</li>
-        </ul>
-      </p>
-      </div>
-    <nav>schedule of rallies</nav>
-    <aside>stand on the following issues</aside>
-  <footer>official team and senatorial slate</footer>
+
+
+ <!-- info -->
+<div class="row">
+  <div class="column" style="background-color:#2D2D96;">
+    <h2>Credentials</h2>
+    <ul>
+        <li>14th Vice President of the Philippines</li>
+        <li>Graduate of BS Economics from the University of the Philippines</li>
+      </ul>
   </div>
+  <div class="column" style="background-color:#FE18A3;">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Honorary Outstanding Woman Award of  the year 2016</li>
+      </ul>
+  </div>
+  <div class="column" style="background-color:#2D2D96;">
+    <h2>Platforms</h2>
+    <ul>
+        <li>Pandemic response</li>
+        <li>Human rights</li>
+        <li>Education and youth</li>
+      </ul>
+  </div>
+  <div class="column" style="background-color:#FE18A3;">
+    <h2>Schedule of Rallies</h2>
+    <ul>
+        <li></li>
+      </ul>
+  </div>
+  <div class="column" style="background-color:#76768D;">
+    <h2>Stand on the following issues</h2>
+    <ul>
+        <li>14th Vice President of the Philippines</li>
+        <li>Graduate of BS Economics from the University of the Philippines</li>
+      </ul>
+  </div>
+  <div class="column" style="background-color:#FE18A3;">
+    <h2>Official team and Senatorial Slate</h2>
+    <ul>
+        <li>14th Vice President of the Philippines</li>
+        <li>Graduate of BS Economics from the University of the Philippines</li>
+      </ul>
+  </div>
+</div>
 </body>
 </html>
