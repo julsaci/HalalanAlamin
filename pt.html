@@ -82,6 +82,22 @@
         transform: translate(-50%, -50%);
   }
 
+  * {
+  box-sizing: border-box;
+}
+    .column3 {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
   </style>
   </head>
   <body>
@@ -94,6 +110,28 @@
   </div>
   <h2><center>PRESIDENTIAL CANDIDATES</center></h2>
   <img src="home-1.png" alt="Halalan Alamin" style="width:100%">
+  
 
+
+  <!-- clickable imgs -->
+  <div class="row" style="box-sizing:border-box; text-align:center;">
+    <div class="column3">
+      <a href="leni.html">
+        <img src="home-isko.jpeg" alt="Isko Moreno Domagoso" width="100%">#3 ISKO MORENO DOMAGOSO
+        </a>
+    </div>
+    <div class="column3">
+      <a href="bbm.html">
+        <img src="home-bbm.png" alt="Bongbong Marcos" width="100%" height="325px">#7 BONGBONG MARCOS
+      </a>
+    </div>
+    <div class="column3">
+      <a href="leni.html">
+        <img src="home-leni.jpeg" alt="Leni Robredo" width="100%">#10 LENI ROBREDO
+        </a>
+    </div>
+  </div>
+
+<!-- about -->
   <h2 id="#About">About</h2>
 </body>
