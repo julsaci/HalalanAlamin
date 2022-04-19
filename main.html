@@ -33,18 +33,6 @@
     color: white;
   }
 
-  .container {
-        position: relative;
-        text-align: center;
-        color: white;
-  }
-  .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-  }
-
   * {
   box-sizing: border-box;
 }
@@ -87,10 +75,96 @@
       padding: 1em;
       margin-left: 10px;
   }
+  
+.card1 {
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #0919ad;
+  margin: 10px;
+}
+.card2 {
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #802016;
+  margin: 10px;
+}
+.card3 {
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+  background-color: pink;
+  margin: 10px;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.aboutcenter {
+  position: static;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  width: 40%;
+}
+
+.aboutcard {
+  width: 700px;
+  height: 210px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.aboutcard .user-card img {
+  top: 50%;
+  display: inline-block;
+  width: 30%;
+  margin-left: 60px;
+  border-radius: 10px;
+}
+
+.aboutcard .general {
+  width: 380px;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+  text-align: center;
+}
+
+nav{
+  padding:30px 0;
+  margin:0 10%;
+  box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
+}
+
 
   </style>
   </head>
   <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <div class="topnav">
     <a class="active" href="pt.html">Home</a>
     <a href="#info">All About the 2022 Elections</a>
@@ -102,7 +176,7 @@
   <img src="home-1.png" alt="Halalan Alamin" style="width:100%">
     
   <!-- informative text -->
-  <center><h1 id="info" style="color:darkblue">2022 Elections</h1></center>
+  <center><br><h1 id="info" style="color:darkblue">2022 Elections</h1></center>
   <div id="main">
     <aside>
       <b>Election voting day:</b><br>
@@ -133,35 +207,92 @@
     </article>
     
   </div>
-
+<nav></nav><br><br><br>
   <!-- clickable imgs -->
   <h2 id="candidates" style="color:darkblue;"><center>The Presidential Candidates</center></h2>
   <div class="row" style="box-sizing:border-box; text-align:center;">
-    <div class="column3">
+    <div class="column3 card1">
       <a href="leni.html" style="color:#333;">
-        <img src="home-isko.jpeg" alt="Isko Moreno Domagoso" width="100%">#3 ISKO MORENO DOMAGOSO
-        </a>
+        <img src="home-isko.jpeg" alt="Isko Moreno Domagoso" style="width:100%; border-radius:5px;"></a>
+        <div class="container" style="color: white;">
+          <br><h4>#3 ISKO MORENO DOMAGOSO</h4>
+          <p>22nd Mayor of Manila City since 2019, candidate under an Independent party</p>
+        </div>
     </div>
-    <div class="column3">
-      <a href="bbm.html" style="color:#333;">
-        <img src="home-bbm.png" alt="Bongbong Marcos" width="100%">#7 BONGBONG MARCOS
-      </a>
+    <div class="column3 card2">
+      <a href="bbm.html">
+        <img src="home-bbm.jpg" alt="Bongbong Marcos" style="width:100%; border-radius:5px;"></a>
+        <div class="container" style="color: white;">
+          <br><h4>#7 BONGBONG MARCOS</h4>
+          <p>Former Senator, candidate under Partido Federal ng Pilipinas (PFP)</p>
+        </div>
     </div>
-    <div class="column3">
+    <div class="column3 card3">
       <a href="leni.html" style="color:#333;">
-        <img src="home-leni.jpeg" alt="Leni Robredo" width="100%">#10 LENI ROBREDO
-        </a>
+        <img src="home-leni.jpeg" alt="Leni Robredo" style="width:100%; border-radius:5px;"></a>
+        <div class="container">
+          <br><h4>#10 LENI ROBREDO</h4>
+          <p>Vice President of the Philippines since 2016, candidate under the Liberal Party (LP)</p>
+        </div>
     </div>
   </div>
+  <br>
 
+  <br>
+<nav></nav><br><br><br>
 <!-- about -->
-  <center><h2 id="about">About Us</h2></center>
+  <center><h2 id="about">About Us</h2></center><br>
+  <div class="aboutcenter">
 
+    <div class="aboutcard">
+        <div class="user-card">
+        <img src="about-ju.jpg">
+        </div>
+        <div class="general">
+            <br><h1>Julianne Acierto</h1>
+            <p>from 11-HUMSS, assigned in coding and design</p>
+        </div>
+    </div>
+
+      <div class="aboutcard">
+        <div class="user-card">
+        <img src="about-adrian.jpg" >
+        </div>
+        <div class="general">
+          <br><h1>Adrian Balburias</h1>
+            <p>from 11-HUMSS, assigned in gathering information about the candidates</p>
+        </div>
+      </div>
+
+  <div class="aboutcard">
+      <div class="user-card">
+        <img src="about-gian.jpg">
+      </div>
+      <div class="general">
+        <br><h1>Gian Dacia</h1>
+          <p>from 11-ABM, assigned in gathering information about the candidates</p>
+      </div>
+  </div>
+
+  <div class="aboutcard">
+    <div class="user-card">
+      <img src="about-justin.jpg">
+    </div>
+    <div class="general">
+        <br><h1>Justin Ortega</h1>
+        <p>from 11-ABM, assigned in gathering information about the candidates</p>
+    </div>
+  </div>
+</div>
+
+<nav></nav><br><br><br>
+<!-- footer -->
   <footer>
     SOURCES:
     <p>Election dates: <a href="https://en.wikipedia.org/wiki/2022_Philippine_general_election" style="color:white;">Wikipedia (2022)</a><br>
     Electoral System: <a href="https://en.wikipedia.org/wiki/Elections_in_the_Philippines#:~:text=The%20Philippines%20has%20a%20multi,responsible%20for%20running%20the%20elections." style="color:white;">Wikipedia (2022)</a><br>
     The Presidency: <a href="https://en.wikipedia.org/wiki/President_of_the_Philippines" style="color:white;">Wikipedia (2022)</a>
     </p>
+    <center><p>Halalan Alamin, 11 ABM/HUMSS 2021-2022</p></center>
   </footer>
 </body>
