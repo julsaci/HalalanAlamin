@@ -3,12 +3,9 @@
 <style>
   body {
     margin: 0;
-    font: Aileron Regular;
+    font-family: Aileron Regular;
   }
-  h1, h2, h3, h4, h5{
-    font: Aileron Heavy;
 
-  }
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -54,26 +51,27 @@
       flex: 1;
   }
     #main > aside {
-        flex: 0 0 20vw;
-        background: beige;
-        order: -1;
-        height: 400px;
+      flex: 0 0 20vw;
+      background: beige;
+      height: fit-content;
+    }
+    #main > aside{
+      order: -1;
     }
     #main > article {
       flex: 1;
     }
+
   footer {
     background: #333;
     color: white;
-    height: 20vh;
     }
-  
-  article, footer {
-      padding: 1em;
+  article, footer, nav {
+    padding: 1em;
     }
   aside {
-      padding: 1em;
-      margin-left: 10px;
+    padding: 1em;
+    margin-left: 10px;
   }
   
 .card1 {
@@ -108,6 +106,7 @@
 }
 
 .center {
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,13 +116,14 @@
   position: static;
   top: 50%;
   left: 50%;
-  margin: auto;
-  width: 40%;
+  margin: 20px;
+  width: 60%;
 }
 
 .aboutcard {
-  width: 700px;
-  height: 210px;
+  align-items: center;
+  width: 630px;
+  height: 170px;
   background-color: #fff;
   background: linear-gradient(#f8f8f8, #fff);
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
@@ -134,27 +134,25 @@
 }
 
 .aboutcard .user-card img {
-  top: 50%;
+  padding-top: 7px;
   display: inline-block;
-  width: 30%;
-  margin-left: 60px;
-  border-radius: 10px;
+  width: 25%;
+  margin-left: 50px;
+  border-radius: 40px;
 }
 
 .aboutcard .general {
-  width: 380px;
-  height: 100%;
   position:absolute;
   top: 0;
   right: 0;
 
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 2rem;
   padding-top: 0;
   text-align: center;
 }
 
-nav{
+section{
   padding:30px 0;
   margin:0 10%;
   box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
@@ -164,7 +162,6 @@ nav{
   </style>
   </head>
   <body>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <div class="topnav">
     <a class="active" href="pt.html">Home</a>
     <a href="#info">All About the 2022 Elections</a>
@@ -172,11 +169,10 @@ nav{
     <a href="#about">About Us</a>
   </div>
 
-  
   <img src="home-1.png" alt="Halalan Alamin" style="width:100%">
     
   <!-- informative text -->
-  <center><br><h1 id="info" style="color:darkblue">2022 Elections</h1></center>
+  <center><br><h1 id="info" style="color:darkblue;">2022 Elections</h1></center>
   <div id="main">
     <aside>
       <b>Election voting day:</b><br>
@@ -201,13 +197,13 @@ nav{
       The president, vice-president, and the senators are elected for a six-year term, while the members of the House of Representatives, governors, vice-governors, mayors, and vice-mayors are elected to serve for a three-year term.<br>
       The Philippines has a multi-party system, with numerous parties in which no one party normally has a chance of gaining power alone, and parties must work with each other to form a coalition government. The Commission on Elections (COMELEC) is responsible for running the elections.<br>
       <br>This system revolves around three separate and sovereign yet interdependent branches: the legislative branch (the law-making body), the executive branch (the law-enforcing body), and the judicial branch (the law-interpreting body). Executive power is exercised by the government under the leadership of the president.
-      <br><h3>The Presidency</h3>
+      <br><br><h3>The Presidency</h3>
       The president is the head of state and the head of government of the Philippines. The president leads the executive branch of the Philippine government and is the commander-in-chief of the Armed Forces of the Philippines. The president is directly elected by the people, and is one of only two nationally elected executive officials, the other being the vice president of the Philippines. The president is limited to a single six-year term. No one who has served more than four years of a presidential term is allowed to run or serve again.<br>
     
     </article>
     
   </div>
-<nav></nav><br><br><br>
+<section></section><br><br><br>
   <!-- clickable imgs -->
   <h2 id="candidates" style="color:darkblue;"><center>The Presidential Candidates</center></h2>
   <div class="row" style="box-sizing:border-box; text-align:center;">
@@ -239,12 +235,12 @@ nav{
   <br>
 
   <br>
-<nav></nav><br><br><br>
+<section></section><br><br><br>
 <!-- about -->
-  <center><h2 id="about">About Us</h2></center><br>
+  <h2 id="about" style="margin-left: 50px;">About Us</h2><br>
   <div class="aboutcenter">
 
-    <div class="aboutcard">
+    <div class="aboutcard column2">
         <div class="user-card">
         <img src="about-ju.jpg">
         </div>
@@ -254,23 +250,22 @@ nav{
         </div>
     </div>
 
-      <div class="aboutcard">
+      <div class="aboutcard column2">
         <div class="user-card">
         <img src="about-adrian.jpg" >
         </div>
         <div class="general">
           <br><h1>Adrian Balburias</h1>
-            <p>from 11-HUMSS, assigned in gathering information about the candidates</p>
+            from 11-HUMSS, assigned in gathering information</p>
         </div>
       </div>
-
   <div class="aboutcard">
       <div class="user-card">
         <img src="about-gian.jpg">
       </div>
       <div class="general">
         <br><h1>Gian Dacia</h1>
-          <p>from 11-ABM, assigned in gathering information about the candidates</p>
+          <p>from 11-ABM, assigned in gathering information</p>
       </div>
   </div>
 
@@ -280,12 +275,13 @@ nav{
     </div>
     <div class="general">
         <br><h1>Justin Ortega</h1>
-        <p>from 11-ABM, assigned in gathering information about the candidates</p>
+        <p>from 11-ABM, assigned in gathering information</p>
     </div>
   </div>
 </div>
 
-<nav></nav><br><br><br>
+<section>
+</section><br><br><br>
 <!-- footer -->
   <footer>
     SOURCES:
@@ -293,6 +289,6 @@ nav{
     Electoral System: <a href="https://en.wikipedia.org/wiki/Elections_in_the_Philippines#:~:text=The%20Philippines%20has%20a%20multi,responsible%20for%20running%20the%20elections." style="color:white;">Wikipedia (2022)</a><br>
     The Presidency: <a href="https://en.wikipedia.org/wiki/President_of_the_Philippines" style="color:white;">Wikipedia (2022)</a>
     </p>
-    <center><p>Halalan Alamin, 11 ABM/HUMSS 2021-2022</p></center>
+    <center><p>Halalan Alamin by 11-ABM/HUMSS, 2021-2022</p></center>
   </footer>
 </body>
